@@ -1,0 +1,37 @@
+
+### Create Usr data
+POST http://localhost:1323/users HTTP/1.1
+content-type: application/json
+
+{
+    "Username": "sert",
+    "Password": "1234567890",
+    "Name":"sert Name",
+    "email":"sert@example.com"
+}
+
+
+### Get All List 
+GET  http://localhost:1323/users HTTP/1.1
+Authorization:  Bearer ace26416-2d55-44f1-b527-20b34cdca833
+
+
+### Get user 
+GET  http://localhost:1323/users/2 HTTP/1.1
+Authorization:  Bearer 1d001581-cab9-46a5-8943-08daac47b6da
+
+### Update Usr data
+PUT  http://localhost:1323/users/3 HTTP/1.1
+Authorization:  Bearer 1d001581-cab9-46a5-8943-08daac47b6da
+content-type: application/json
+
+{
+    
+    "Name":"Sert1 1111",
+    "Password": "1234567890"
+   
+}
+
+### Delete user 
+DELETE  http://localhost:1323/users/5 HTTP/1.1
+

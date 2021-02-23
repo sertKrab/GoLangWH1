@@ -1,0 +1,28 @@
+### Create Post data
+POST http://localhost:1323/users/1/posts HTTP/1.1
+content-type: application/json
+
+{    
+    "Content":"test post of userid 2",
+    "Likes": 1
+}
+
+
+### Get User Post data
+GET http://localhost:1323/users/1/posts
+
+### Get User Post data
+GET http://localhost:1323/users/1/posts/1
+
+### Get User Post data
+PUT  http://localhost:1323/users/1/posts/2 HTTP/1.1
+content-type: application/json
+
+{    
+    "Content":"test2",
+    "Likes": 5
+}
+
+### Delete User Post data
+DELETE  http://localhost:1323/users/1/posts/2
+
